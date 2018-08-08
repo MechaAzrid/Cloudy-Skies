@@ -121,7 +121,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 243102620}
-  - component: {fileID: 243102619}
   - component: {fileID: 243102618}
   - component: {fileID: 243102617}
   - component: {fileID: 243102615}
@@ -149,8 +148,8 @@ MonoBehaviour:
     m_Bits: 1536
   horizontalRayCount: 4
   verticalRayCount: 4
---- !u!61 &243102616
-BoxCollider2D:
+--- !u!60 &243102616
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -164,16 +163,44 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.4, y: 0.58}
+    newSize: {x: 0.4, y: 0.58}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.19337432, y: -0.2494457}
+      - {x: 0.15010151, y: -0.22020648}
+      - {x: 0.1315341, y: -0.1468455}
+      - {x: 0.07354736, y: -0.03164681}
+      - {x: 0.06010151, y: 0.038144886}
+      - {x: 0.10508903, y: 0.07629882}
+      - {x: 0.10371542, y: 0.121518224}
+      - {x: 0.087403774, y: 0.1461924}
+      - {x: 0.054480553, y: 0.12542614}
+      - {x: -0.005526066, y: 0.15270916}
+      - {x: -0.024095377, y: 0.18783514}
+      - {x: -0.06328901, y: 0.16920164}
+      - {x: -0.11701282, y: 0.005299966}
+      - {x: -0.13433711, y: -0.044485144}
+      - {x: -0.10209068, y: -0.06807587}
+      - {x: -0.12030809, y: -0.10835479}
+      - {x: -0.15917397, y: -0.1642282}
+      - {x: -0.20226812, y: -0.22516155}
+      - {x: -0.19999999, y: -0.29}
+      - {x: -0.12154722, y: -0.29000002}
+      - {x: -0.11905527, y: -0.2284815}
+      - {x: -0.081281506, y: -0.16755411}
+      - {x: -0.03823344, y: -0.12230666}
+      - {x: -0.010149161, y: -0.08319163}
+      - {x: 0.020658016, y: -0.1373452}
+      - {x: 0.040619694, y: -0.10082259}
+      - {x: 0.07566945, y: -0.19263963}
+      - {x: 0.09381517, y: -0.28206167}
+      - {x: 0.19659774, y: -0.28092754}
 --- !u!114 &243102617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,22 +212,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e68a11a2d942648a44c303e1643b7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!23 &243102618
-MeshRenderer:
+--- !u!212 &243102618
+SpriteRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 243102614}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: c157a3e51d5188d48b82089d13adb338, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -212,7 +239,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -220,13 +247,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &243102619
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 243102614}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 08d59da311937784fb25c2d11ff289d0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.4, y: 0.58}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!4 &243102620
 Transform:
   m_ObjectHideFlags: 0
@@ -235,7 +265,7 @@ Transform:
   m_GameObject: {fileID: 243102614}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.78, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1

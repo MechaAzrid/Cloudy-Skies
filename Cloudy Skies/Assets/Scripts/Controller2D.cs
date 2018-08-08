@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent (typeof (BoxCollider2D))]
+[RequireComponent (typeof (PolygonCollider2D))]
+                            //Originally BoxCollider2D
 public class Controller2D : MonoBehaviour
 {
-    BoxCollider2D collider;
+    PolygonCollider2D collider;
+    //Originally BoxCollider2D
     RaycastOrigins raycastOrigins;
     public LayerMask collisionMask;
 
@@ -23,7 +25,8 @@ public class Controller2D : MonoBehaviour
 
 	void Start()
     {
-        collider = GetComponent<BoxCollider2D>();
+        collider = GetComponent<PolygonCollider2D>();
+        //Originally BoxCollider2D
         CalculateRaySpacing();
     }
 

@@ -10,6 +10,7 @@ TagManager:
   - Shop UI
   - Main Menu UI
   - Pause Menu UI
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Player
   - Ground
   - Obstacle
-  - 
+  - Enemy
   - 
   - 
   - 
